@@ -1,0 +1,45 @@
+<div class="bacdropModal is-hidden">
+  <div class="modal">
+    <button type="button" class="modal__close">
+      <svg class="modal__icon" width="20px" height="20px">
+        <use href="images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal__title">ЗАПИШІТЬСЯ</h3>
+    <p class="modal__text">Забронюйте свій час та отримайте знижку 30%</p>
+    <form class="modal__form">
+      <div class="input__wraper">
+        <input
+          type="text"
+          id="name"
+          autocomplete="off"
+          placeholder="Ім'я"
+          name="client"
+          class="modal__input"
+        /><label id="nameLabel" class="modal__label is-hidden" for="name"
+          >Введіть ім'я кирилицею</label
+        >
+      </div>
+      <div class="input__wraper">
+        <input
+          type="tel"
+          id="number"
+          autocomplete="off"
+          placeholder="+380"
+          name="number"
+          value="+380"
+          class="modal__input"
+        /><label id="numberLabel" class="modal__label is-hidden" for="number"
+          >Введіть вірний номер</label
+        >
+      </div>
+
+      <div class="modal__check">
+        <svg class="check__icon" width="67px" height="63px">
+          <use href="images/sprite.svg#icon-Check"></use>
+        </svg>
+      </div>
+      <button type="submit" class="modal__button">ЗАПИСАТИСЬ</button>
+    </form>
+  </div>
+</div>

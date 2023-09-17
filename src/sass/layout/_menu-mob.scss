@@ -1,0 +1,86 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background: rgba(34, 34, 34, 0.5);
+}
+
+.menu-mob {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  padding: 60px 15px 25px 25px;
+  width: 65%;
+  height: 90%;
+
+  background: #ffffff;
+  border-radius: 0px 0px 0px 10px;
+}
+
+.menu-mob__btn {
+  padding: 0;
+  position: absolute;
+  top: 13px;
+  right: 16px;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+.navigation__item {
+  position: relative;
+}
+
+.menu-mob__line {
+  margin-top: 11px;
+  margin-bottom: 11px;
+  border: 1px solid #f8a3b2;
+}
+
+.square {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(50%) rotate(45deg);
+
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #f8a3b2;
+}
+
+.navigation__link {
+  padding-left: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+
+  color: #222222;
+}
+
+.menu-mob__linkPhone {
+  display: flex;
+}
+
+.menu-mob__text {
+  margin-left: 3px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.31;
+  color: #222222;
+}
+
+.menu-mob__clock {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.is-hidden {
+  display: none;
+}

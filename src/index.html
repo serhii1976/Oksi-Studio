@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Beauty salon OKSI</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <include src="./partials/header.html"></include>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/services.html"></include>
+    <include src="./partials/offer.html"></include>
+    <include src="./partials/price.html"></include>
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/menu-mob.html"></include>
+    <include src="./partials/modal.html"></include>
+
+    <script type="module" src="./js/mobile-menu.js"></script>
+    <script type="module" src="./js/modal.js"></script>
   </body>
 </html>

@@ -1,0 +1,19 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.overflowHidden {
+  overflow: hidden;
+}

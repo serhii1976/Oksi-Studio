@@ -1,0 +1,194 @@
+.offer {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    ),
+    url('../images/offer-mobile.jpg');
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include tablet {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0.3) 100%
+      ),
+      url('../images/offer-tablet.jpg');
+  }
+  @include desktop {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0.3) 100%
+      ),
+      url('../images/offer-desktop.jpg');
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .offer {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0.3) 100%
+      ),
+      url('../images/offer-mobile-2x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include tablet {
+      background-image: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0.3) 0%,
+          rgba(255, 255, 255, 0.3) 100%
+        ),
+        url('../images/offer-tablet-2x.jpg');
+    }
+    @include desktop {
+      background-image: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0.3) 0%,
+          rgba(255, 255, 255, 0.3) 100%
+        ),
+        url('../images/offer-desktop-2x.jpg');
+    }
+  }
+}
+
+.offer__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @include desktop {
+    padding-top: 108px;
+    padding-bottom: 108px;
+  }
+}
+
+.offer__text {
+  text-align: center;
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  font-variant: all-small-caps;
+
+  color: #222222;
+  font-variation-settings: 'opsz' 8;
+
+  @include tablet {
+    font-size: 24px;
+    line-height: normal;
+  }
+  @include desktop {
+    font-size: 36px;
+    line-height: normal;
+  }
+}
+
+.offer__accent {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  font-variant: all-small-caps;
+  color: $highlightedTextColor;
+  font-variation-settings: 'opsz' 8;
+
+  @include tablet {
+    font-size: 40px;
+    line-height: normal;
+  }
+  @include desktop {
+    font-size: 50px;
+    line-height: normal;
+  }
+}
+
+.offer__button {
+  margin-top: 15px;
+
+  @include tablet {
+    position: relative;
+    padding: 16px 32px;
+    margin-top: 20px;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2px;
+  }
+  @include desktop {
+    padding: 16px 48px;
+    margin-top: 21px;
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.4px;
+  }
+}
+
+.offer__logo {
+  display: none;
+
+  @include tablet {
+    display: block;
+    position: absolute;
+  }
+  @include desktop {
+    left: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.offerLogo__text {
+  color: rgba(224, 176, 185, 0.6);
+  font-size: 180px;
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 36px;
+
+  @include desktop {
+    font-size: 300px;
+    letter-spacing: 60px;
+  }
+}
+
+.offerLogo__letter {
+  color: rgba(203, 106, 129, 0.6);
+  font-size: 180px;
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 36px;
+
+  @include desktop {
+    font-size: 300px;
+    letter-spacing: 60px;
+  }
+}
+
+.offerLogo__scissors {
+  @include tablet {
+    fill: rgba(199, 85, 106, 0.6);
+    position: absolute;
+    left: 80px;
+    bottom: 0;
+  }
+  @include desktop {
+    left: 135px;
+    width: 92px;
+  }
+}

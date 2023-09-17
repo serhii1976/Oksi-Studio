@@ -1,0 +1,146 @@
+.price__container {
+  padding: 50px 30px;
+  @include tablet {
+    padding: 90px 50px;
+  }
+  @include desktop {
+    padding: 120px 180px;
+  }
+}
+
+.price__title {
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  @include desktop {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 4px;
+  }
+}
+
+.price__list {
+  margin-top: 30px;
+
+  @include tablet {
+    margin-top: 60px;
+  }
+}
+
+.price__item {
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  @include tablet {
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+  }
+  @include desktop {
+  }
+}
+
+.price__subtitle {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.05em;
+
+  @include tablet {
+    text-align: start;
+  }
+  @include desktop {
+    font-size: 26px;
+    line-height: normal;
+    letter-spacing: 1.3px;
+  }
+}
+
+.price__sublist {
+  margin-top: 20px;
+
+  @include tablet {
+    margin-top: 16px;
+  }
+}
+
+.price__subitem {
+  &:not(:first-child) {
+    margin-top: 40px;
+  }
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.price__text {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.35;
+  letter-spacing: 0.05em;
+
+  @include desktop {
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: 1px;
+  }
+}
+
+.price__aftersubtitleText {
+  margin-top: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.31;
+}
+
+.price__button {
+  margin-top: 40px;
+  @include tablet {
+    font-weight: 500;
+  }
+  @include desktop {
+    margin-top: 50px;
+
+    font-weight: 600;
+  }
+}
+
+.price__line {
+  border: 1px solid #f8a3b2;
+
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+  }
+}
+
+.price__lineTablet {
+  display: none;
+  @include tablet {
+    display: block;
+    border: 1px solid #f8a3b2;
+  }
+}
+.br {
+  @include tablet {
+    display: none;
+  }
+}
