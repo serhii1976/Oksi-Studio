@@ -1,0 +1,2 @@
+(()=>{const e={openMenuButton:document.querySelector(".header__burger"),closeMenuButton:document.querySelector(".menu-mob__btn"),mobileMenu:document.querySelector(".backdrop"),mobileNavigation:document.querySelector(".navigation_list"),mobileBody:document.querySelector("body")};function o(){e.mobileMenu.classList.toggle("is-hidden"),e.mobileBody.classList.toggle("overflowHidden")}e.openMenuButton.addEventListener("click",o),e.closeMenuButton.addEventListener("click",o),e.mobileNavigation.addEventListener("click",o)})();
+//# sourceMappingURL=index.bcad3f14.js.map
