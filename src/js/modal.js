@@ -137,7 +137,7 @@ import validator from 'validator';
 
     async function postTelegram() {
       try {
-        axios.post(URI_API, {
+        await axios.post(URI_API, {
           chat_id: CHAT_ID,
           parse_mode: 'html',
           text: message,
