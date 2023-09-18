@@ -115,8 +115,8 @@ import validator from 'validator';
       elements: { client, number },
     } = event.currentTarget;
 
-    const TOKEN = '6331735212:AAFKGYc84mRQJgoFosByRrxoXUt7yxqxlyE';
-    const CHAT_ID = '-1001857246543';
+    const TOKEN = '6202495962:AAFGPR7JHz-y-V5duKktGMwh6_j8uYYHUek';
+    const CHAT_ID = '-1001849383116';
     const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
     if (!refs.check.classList.contains('is-hidden')) {
