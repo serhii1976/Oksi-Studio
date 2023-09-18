@@ -44,8 +44,6 @@ import validator from 'validator';
   }
 
   function handleValidateForm(event) {
-    console.log(event.target.id);
-
     if (event.target.value === '') {
       event.target.classList.remove('valid');
       event.target.classList.remove('invalid');
@@ -93,12 +91,9 @@ import validator from 'validator';
     refs.inputs.forEach(input => {
       input.classList.remove('invalid');
       input.classList.remove('valid');
-      console.log(input.value);
       input.value = '';
-      console.log(input.value);
       if (input.id === 'number') {
         input.value = '+380';
-        console.log(input.value);
       }
     });
   }
@@ -135,14 +130,6 @@ import validator from 'validator';
         failure: { background: '#f8a3b2', textColor: '#fff' },
       });
     }
-
-    // if (!validator.isAlpha(client.value, 'uk-UA')) {
-    //   return Notiflix.Notify.warning("Введіть вірне ім'я, тільки українські літери");
-    // }
-
-    // if (!validator.isMobilePhone(number.value)) {
-    //   return Notiflix.Notify.warning('Введіть вірний номер телефона');
-    // }
 
     let message = `<b>Заявка з сайта</b>\n`;
     message += `<b>Ім'я:</b> ${client.value}\n`;
