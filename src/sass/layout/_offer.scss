@@ -83,7 +83,8 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
-  font-variant: all-small-caps;
+  font-variant-caps: all-small-caps;
+  text-transform: lowercase;
 
   color: #222222;
   font-variation-settings: 'opsz' 8;
@@ -103,7 +104,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  font-variant: all-small-caps;
+  font-variant-caps: all-small-caps;
   color: $highlightedTextColor;
   font-variation-settings: 'opsz' 8;
 
@@ -147,6 +148,7 @@
   @include tablet {
     display: block;
     position: absolute;
+    z-index: -1;
   }
   @include desktop {
     left: 200px;
